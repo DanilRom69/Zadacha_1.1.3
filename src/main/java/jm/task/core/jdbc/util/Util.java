@@ -11,7 +11,6 @@ public class Util {
         try {
 
             connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
-            System.out.println("Connected OK");
 
         } catch (SQLException e) {
             e.getMessage();
