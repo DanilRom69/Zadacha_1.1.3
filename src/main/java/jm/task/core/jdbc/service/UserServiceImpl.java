@@ -1,14 +1,15 @@
 package jm.task.core.jdbc.service;
 
+import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private static UserDaoJDBCImpl userDaoJDBCImpl = new UserDaoJDBCImpl();
+    private static UserDao userDaoJDBCImpl = new UserDaoJDBCImpl();
 
-    public UserDaoJDBCImpl getUserDaoJDBCImpl() {
+    public UserDao getUserDaoJDBCImpl() {
         return userDaoJDBCImpl;
     }
 
